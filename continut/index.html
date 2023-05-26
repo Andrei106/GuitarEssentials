@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acasa</title>
+    <link rel="stylesheet" href="css/stil.css" />
+    <script src="js/script.js"></script>
+    <script src="js/cumparaturi.js"></script>
+  </head>
+  <body onload="schimbaContinut('acasa');">
+    <header>
+      <nav>
+        <a onclick="schimbaContinut('acasa')">Acasă</a>
+        <a onclick="schimbaContinut('inregistreaza')">Înregistrare</a>
+        <a onclick="schimbaContinut('video')">Tutoriale</a>
+        <a onclick="schimbaContinut('despre')">Despre</a>
+        <a onclick="schimbaContinut('desen')">Desen</a>
+        <a onclick="schimbaContinut('verifica')">Verifică</a>
+        <a onclick="schimbaContinut('invat')">Învăț</a>
+        <a onclick="schimbaContinut('cumparaturi')">Cumpărături</a>
+        <a
+          onclick="schimbaContinut('persoane', 'js/persoane.js', 'incarcaPersoane')"
+          >Persoane</a
+        >
+      </nav>
+    </header>
+
+    <main id="continut"></main>
+
+    <footer>
+      <br />
+      <p>&copy; 2023.Epure Andrei-Ioan</p>
+    </footer>
+  </body>
+</html>

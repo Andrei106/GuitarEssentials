@@ -1,0 +1,81 @@
+<aside class="sidenav">
+  <a href="#section1">Secțiunea 1</a>
+  <a href="#section2">Secțiunea 2</a>
+  <a href="#section3">Secțiunea 3</a>
+</aside>
+<section class="flex-container" id="section1">
+  <div>
+    <h1 class="Title">Secțiunea 1</h1>
+    <p id="current_date"></p>
+    <p id="URL"></p>
+    <p id="loc"></p>
+    <p id="browser"></p>
+    <p id="OS"></p>
+  </div>
+</section>
+
+<section class="flex-container" id="section2">
+  <div>
+    <h1 class="Title">Secțiunea 2</h1>
+    <label for="colorStroke">Culoare contur:</label>
+    <input
+      type="color"
+      id="colorStroke"
+      name="color1"
+      value="#FF0000"
+    /><br /><br />
+    <label for="colorFill">Culoare umplere:</label>
+    <input
+      type="color"
+      id="colorFill"
+      name="color2"
+      value="#0000FF"
+    /><br /><br />
+    <button onclick="clearMyCanvas()">Șterge</button>
+
+    <canvas
+      class="center"
+      onclick="drawCanvas(event)"
+      id="myCanvas"
+      width="800"
+      height="400"
+      style="border: 2px solid #964b00"
+    ></canvas>
+  </div>
+</section>
+
+<section class="flex-container" id="section3">
+  <div>
+    <h1 class="Title">Secțiunea 3</h1>
+    <label for="position">Poziție:</label>
+    <input type="text" id="position" placeholder="Poziție" />
+    <br />
+
+    <br />
+    <input type="color" id="colorPicker" value="#c3b1e6" />
+    <br />
+    <br />
+    <button onclick="addRow()">Adaugă rând</button>
+    <button onclick="addColumn()">Adaugă coloană</button>
+
+    <br />
+    <br />
+    <table id="myTable">
+      <tr>
+        <th>Nota</th>
+        <th>Nota</th>
+        <th>Nota</th>
+      </tr>
+      <tr>
+        <td>DO</td>
+        <td>sol</td>
+        <td>la</td>
+      </tr>
+      <tr>
+        <td>re</td>
+        <td>mi</td>
+        <td>do</td>
+      </tr>
+    </table>
+  </div>
+</section>

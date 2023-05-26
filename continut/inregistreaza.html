@@ -1,0 +1,83 @@
+<form class="flex-container">
+  <h1 class="Title">Formular de înregistrare</h1>
+  <fieldset>
+    <legend>Informații generale</legend>
+    <label for="utilizator">Nume utilizator:</label>
+    <input type="text" id="utilizator" name="utilizator" required />
+    <br /><br />
+    <label for="parola">Parolă:</label>
+    <input type="password" id="parola" name="parola" minlength="6" required />
+    <br /><br />
+    <label for="nume">Nume:</label>
+    <input type="text" id="nume" name="nume" />
+    <br /><br />
+
+    <label for="prenume">Prenume:</label>
+    <input type="text" id="prenume" name="prenume" />
+    <br /><br />
+    <label for="email">Adresă de email:</label>
+    <input type="email" id="email" name="email" required />
+    <br /><br />
+    <label for="telefon">Telefon:</label>
+    <input type="tel" id="telefon" name="telefon" />
+    <br /><br />
+  </fieldset>
+  <fieldset>
+    <legend>Informații personale</legend>
+
+    <br />
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex">
+      <option value="masculin">Masculin</option>
+      <option value="feminin">Feminin</option>
+    </select>
+    <br /><br />
+
+    <label for="mancare_preferata">Mâncarea preferată:</label>
+    <input
+      type="text"
+      id="mancare_preferata"
+      name="mancare_preferata"
+      list="mancari_preferate"
+    />
+    <datalist id="mancari_preferate">
+      <option value="Pizza"></option>
+      <option value="Paste"></option>
+      <option value="Salate"></option>
+      <option value="Burger"></option></datalist
+    ><br /><br />
+
+    <label for="culoare_preferata">Culoarea preferată:</label>
+    <input
+      type="color"
+      id="culoare_preferata"
+      name="culoare_preferata"
+    /><br /><br />
+
+    <label for="data_nasterii">Data nașterii:</label>
+    <input type="date" id="data_nasterii" name="data_nasterii" /><br /><br />
+
+    <label for="ora_nasterii">Ora nașterii:</label>
+    <input type="time" id="ora_nasterii" name="ora_nasterii" /><br /><br />
+
+    <label for="varsta">Vârsta:</label>
+    <input type="range" id="varsta" name="varsta" min="8" max="100" />
+    <br /><br />
+
+    <label for="adresa_pagina_personala">Adresa paginii personale:</label>
+    <input
+      type="url"
+      id="adresa_pagina_personala"
+      name="adresa_pagina_personala"
+    /><br /><br />
+    <label for="descriere">Descriere:</label> <br />
+    <textarea id="descriere" name="descriere" rows="20" cols="60"></textarea>
+    <br /><br />
+    <input
+      class="button"
+      type="submit"
+      onclick="register()"
+      value="Înregistrare"
+    />
+  </fieldset>
+</form>

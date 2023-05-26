@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE persoane SYSTEM "persoane.dtd">
+<persoane>
+    <persoana id="1">
+        <nume>Popescu</nume>
+        <prenume>Ion</prenume>
+        <varsta>23</varsta>
+        <adresa>
+            <strada>Florilor</strada>
+            <numar>23</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <CV>
+            <liceu>Alexandru Ioan Cuza</liceu>
+        </CV>
+    </persoana>
+    <persoana id="2">
+        <nume>Enescu</nume>
+        <prenume>Mihai</prenume>
+        <varsta>34</varsta>
+        <adresa>
+            <strada>Liliacului</strada>
+            <numar>13</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <CV>
+            <liceu>Garabet Ibraileanu</liceu>
+        </CV>
+    </persoana>
+    <persoana id="3">
+        <nume>Pop</nume>
+        <prenume>Maria</prenume>
+        <varsta>19</varsta>
+        <adresa>
+            <strada>Teiului</strada>
+            <numar>31</numar>
+            <localitate>Iasi</localitate>
+            <judet>Iasi</judet>
+            <tara>Romania</tara>
+        </adresa>
+        <CV>
+            <liceu>Alexandru Ioan Cuza</liceu>
+        </CV>
+    </persoana>
+</persoane>

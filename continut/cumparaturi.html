@@ -1,0 +1,31 @@
+<div class="flex-container">
+  <div>
+    <h1 class="Title">Lista de cumparaturi</h1>
+    <h2 class="subTitle">Adaugare produs</h2>
+    <br />
+
+    <form>
+      <label for="Nume">Nume:</label>
+      <input id="nume" type="text" /><br />
+      <label for="Cantitate:">Cantitate:</label>
+      <input id="cantitate" type="number" /><br />
+      <button onclick="buy()">Cumpara</button>
+      <br />
+    </form>
+
+    <p>Modalitate de stocare:</p>
+    <select id="storage2" name="storage" onclick="changeStorage()">
+      <option value="local">LocalStorage</option>
+      <option value="index">IndexedDB</option>
+    </select>
+    <br />
+    <br />
+    <table id="lista_cumparaturi">
+      <tr>
+        <th>Id</th>
+        <th>Produs</th>
+        <th>Cantitate</th>
+      </tr>
+    </table>
+  </div>
+</div>
